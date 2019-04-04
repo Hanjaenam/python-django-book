@@ -1,0 +1,8 @@
+<!-- <form>태그나 submit버튼은 직접 만들어주어야 한다.-->
+<form action="" method="post">
+  {% csrf_token %}
+  {{form}}      <!-- table태그 default : form.as_table-->
+  {{form.as_p}} <!-- <p>태그로 감싸진다. -->
+  {{form.as_ul}}<!-- <ul>-<li>태그로 감싸진다.-->
+  <input type="submit" value="Submit">
+</form>

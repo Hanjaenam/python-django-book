@@ -1,0 +1,11 @@
+basic
+  1. django-admin startproject <name>
+  2. python manage.py startapp <appName>
+  3. python manage.py migrate
+
+check DB
+  1. python manage.py makemigrations
+  2. python manage.py migrate
+
+create admin user
+  1. python manage.py createsuperuser

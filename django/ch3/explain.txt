@@ -1,0 +1,19 @@
+1) basic 
+  django-admin startproject mysite // mysite 프로젝트 생성
+  python manage.py startapp polls  // application 생성
+  settings.py
+  python manage.py migrate         // DB에 기본 Table을 생성한다.
+  python manage.py runserver       // 현재까지의 작업을 개발용 웹 서버로 확인함
+
+2) create model
+  models.py                       // 테이블 정의
+  admins.py                       // 정의된 테이블이 Admin 화면에 보여주게 함
+  python manage.py makemigrations // DB에 변경이 필요한 사항을 추출함
+  python manage.py migrate        // DB에 변경사항을 반영함
+
+3) view, template
+  urls.py                         // URLconf 코딩
+  views.index()   함수 작성 + index.html
+  views.detail()  함수 작성 + detail.html
+  views.vote()    함수 작성
+  view.results()  함수 작성 + results.html

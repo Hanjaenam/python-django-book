@@ -1,0 +1,13 @@
+{% extends "base_books.html" %}
+
+{% block content %}
+<h2>Book List</h2>
+<ul>
+  <!-- ListIvew 에서 자동으로 Context 변수로 'object_list'로 저장해준다. -->
+  {% for book in object_list %}
+    <li>
+      <a href="{% url 'books:book_detail' book.id %}">{{book.title}}</a>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock content %}
